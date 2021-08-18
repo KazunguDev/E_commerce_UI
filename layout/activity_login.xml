@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGreen"
+    tools:context=".Activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/IvOlxIcon"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/olx_icon"
+        app:layout_constraintBottom_toTopOf="@id/btnContinueWithPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnContinueWithPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:background="@drawable/rectangle_bg"
+        android:drawableLeft="@drawable/phone_icon"
+        android:padding="@dimen/dp_10"
+        android:text="@string/continue_with_phone"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGreen"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toTopOf="@id/btnContinueWithGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IvOlxIcon" />
+
+    <Button
+        android:id="@+id/btnContinueWithGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rectangle_bg"
+        android:drawableLeft="@drawable/ic_google"
+        android:padding="@dimen/dp_10"
+        android:text="@string/continue_with_google"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGreen"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toTopOf="@id/btnContinueWithFacebook"
+        app:layout_constraintEnd_toEndOf="@+id/btnContinueWithPhone"
+        app:layout_constraintStart_toStartOf="@+id/btnContinueWithPhone"
+        app:layout_constraintTop_toBottomOf="@id/btnContinueWithPhone" />
+
+    <Button
+        android:id="@+id/btnContinueWithFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/rectangle_bg"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:padding="@dimen/dp_10"
+        android:text="@string/continue_with_facebook"
+        android:textAllCaps="false"
+        android:textColor="@color/darkGreen"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintBottom_toTopOf="@id/tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnContinueWithGoogle" />
+
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:text="@string/Or"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvLoginWithMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnContinueWithFacebook" />
+
+    <TextView
+        android:id="@+id/tvLoginWithMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:text="@string/Login_with_Email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOr" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="160dp"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginWithMail" />
+
+    <TextView
+        android:id="@+id/tvOlxTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center_horizontal"
+        android:text="@string/olx_Term"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLoginWithMail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
